@@ -32,7 +32,7 @@ export const Home = ({ input, page }: { input: string; page: number }) => {
     navigate(`/card/${movie.id}`, { state: { movie } });
   };
   const baseUrl = "https://api.themoviedb.org/3";
-  const api_key = "100f2e42452172f54adb83647f848987";
+  const api_key = "INSERT YOUR API KEY ";
   let fetchUrl = input
     ? `${baseUrl}/search/movie?api_key=${api_key}&query=${input}&page=${page}`
     : `${baseUrl}/discover/movie?api_key=${api_key}&page=${page}`;
