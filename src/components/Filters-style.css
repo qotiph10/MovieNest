@@ -1,0 +1,133 @@
+.FilterBar {
+  position: relative;
+  width: 100%;
+  background-color: rgba(168, 168, 168, 0.408);
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Option {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.FilterDisplay {
+  position: relative;
+  width: 90%;
+  display: flex;
+  justify-content: left;
+}
+
+.Filters {
+  border-left: 2px solid rgba(255, 255, 255, 0.19);
+  position: relative;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8f1313;
+  color: white;
+  cursor: pointer;
+}
+
+.filterDropDown {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 100%;
+  width: 300px;
+  background-color: #8f1313;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-top: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.filterDropDown.show {
+  display: block; /* Show when the class 'show' is added */
+}
+
+ul {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+.filterDropDown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filterDropDown li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: rgba(0, 0, 0, 0.199) 3px solid;
+  width: 100%;
+}
+
+.filterDropDown li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.optonGeners {
+  display: flex;
+  justify-content: start;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.generItem {
+  padding: 0.3rem;
+  background-color: black;
+  color: white;
+  margin-right: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+.generItem:active {
+  background-color: #8f1313;
+}
+.optionInput {
+  width: 100px;
+}
+.optionContiner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.optionButton {
+  width: 60px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.FilterItem {
+  padding: 0.3rem;
+  background-color: rgba(168, 168, 168, 0.915);
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  border: black solid 2px;
+  border-radius: 10%;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  height: 30px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.xMark {
+  margin-left: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.xMark:hover {
+  color: red;
+}
